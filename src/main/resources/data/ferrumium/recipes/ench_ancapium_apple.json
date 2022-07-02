@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "NNN",
+    "NAN",
+    "NNN"
+  ],
+
+  "key": {
+    "A": {
+      "item": "minecraft:apple"
+    },
+    "N": {
+      "item": "ferrumium:ancapium_block"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:ench_ancapium_apple",
+    "count": 1
+  }
+}

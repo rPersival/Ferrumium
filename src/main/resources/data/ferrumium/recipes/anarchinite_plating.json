@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "EEE",
+    "EGH",
+    "HHH"
+  ],
+
+  "key": {
+    "H": {
+      "item": "ferrumium:hellarium_ingot"
+    },
+
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+
+    "E": {
+      "item": "ferrumium:enderium_ingot"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:anarchinite_plating",
+    "count": 4
+  }
+}

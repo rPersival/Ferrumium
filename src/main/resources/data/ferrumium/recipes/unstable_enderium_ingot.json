@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+      "item": "ferrumium:unstable_enderium_block"
+    }
+
+  ],
+
+  "result": {
+    "item": "ferrumium:unstable_enderium_ingot",
+    "count": 9
+  }
+}

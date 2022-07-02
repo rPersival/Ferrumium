@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+      "item": "ferrumium:ancapium_ingot"
+    }
+
+  ],
+
+  "result": {
+    "item": "ferrumium:black_gold_nugget",
+    "count": 9
+  }
+}

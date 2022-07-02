@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ferrumium:blocks/powered_enderium_ore"
+  }
+}

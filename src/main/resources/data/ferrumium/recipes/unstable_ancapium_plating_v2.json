@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "   ",
+    "IDI",
+    "   "
+  ],
+
+  "key": {
+    "I": {
+      "item": "ferrumium:unstable_enderium_ingot"
+    },
+
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:unstable_enderium_plating",
+    "count": 1
+  }
+}

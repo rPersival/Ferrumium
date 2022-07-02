@@ -1,0 +1,68 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.story.hard_gear.title"
+    },
+    "description": {
+      "translate": "advancements.story.hard_gear.description"
+    },
+    "icon": {
+      "item": "ferrumium:anarchinite_chest"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "anarchinite_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:anarchinite_helm"
+          }
+        ]
+      }
+    },
+    "anarchinite_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:anarchinite_chest"
+          }
+        ]
+      }
+    },
+    "anarchinite_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:anarchinite_legs"
+          }
+        ]
+      }
+    },
+    "anarchinite_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:anarchinite_feet"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "anarchinite_helmet",
+      "anarchinite_chestplate",
+      "anarchinite_leggings",
+      "anarchinite_boots"
+    ]
+  ],
+  "parent": "minecraft:story/shiny_gear"
+}

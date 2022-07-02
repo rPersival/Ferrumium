@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "EE ",
+    " R ",
+    " R "
+  ],
+
+  "key": {
+    "E": {
+      "item": "ferrumium:enderium_ingot"
+    },
+    "R": {
+      "item": "ferrumium:reinforced_stick"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:enderium_hoe",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "AAA",
+    "A A",
+    "A A"
+  ],
+
+  "key": {
+    "A": {
+      "item": "ferrumium:anarchinite_ingot"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:anarchinite_legs",
+    "count": 1
+  }
+}

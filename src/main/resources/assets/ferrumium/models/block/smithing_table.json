@@ -1,0 +1,12 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "particle": "ferrumium:blocks/smithing_table_side",
+    "up": "ferrumium:blocks/smithing_table_top",
+    "down": "ferrumium:blocks/smithing_table_bottom",
+    "north": "ferrumium:blocks/smithing_table_front",
+    "east": "ferrumium:blocks/smithing_table_side",
+    "south": "ferrumium:blocks/smithing_table_side",
+    "west": "ferrumium:blocks/smithing_table_side"
+  }
+}

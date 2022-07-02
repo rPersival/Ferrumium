@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.story.ancapium.title"
+    },
+    "description": {
+      "translate": "advancements.story.ancapium.description"
+    },
+    "icon": {
+      "item": "ferrumium:ancapium_ingot"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "Ancap": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:ancapium_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:story/mine_diamond"
+}

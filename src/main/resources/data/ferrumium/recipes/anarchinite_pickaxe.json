@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "NNN",
+    " R ",
+    " R "
+  ],
+
+  "key": {
+    "N": {
+      "item": "ferrumium:anarchinite_ingot"
+    },
+    "R": {
+      "item": "ferrumium:reinforced_stick"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:anarchinite_pickaxe",
+    "count": 1
+  }
+}

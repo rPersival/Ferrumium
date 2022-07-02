@@ -1,0 +1,11 @@
+
+{
+    "replace": false,
+    "values": [
+        "ferrumium:hellarium_block",
+        "ferrumium:enderium_block",
+        "ferrumium:ancapium_block",
+        "ferrumium:anarchinite_block",
+        "ferrumium:unstable_enderium_block"
+    ]
+  }

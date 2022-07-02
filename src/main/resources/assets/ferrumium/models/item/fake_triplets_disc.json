@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ferrumium:items/fake_triplets_disc"
+  }
+}

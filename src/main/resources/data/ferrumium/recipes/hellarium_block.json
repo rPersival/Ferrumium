@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "HHH",
+    "HHH",
+    "HHH"
+  ],
+
+  "key": {
+    "H": {
+      "item": "ferrumium:hellarium_ingot"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:hellarium_block",
+    "count": 1
+  }
+}

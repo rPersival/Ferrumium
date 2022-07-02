@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ferrumium:anarchinite_plating"
+  },
+  "result": "ferrumium:anarchinite_ingot",
+  "experience": 0.0,
+  "cookingtime": 200
+}

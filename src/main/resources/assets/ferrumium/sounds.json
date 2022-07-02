@@ -1,0 +1,12 @@
+{
+  "disc.fake_triplets_disc": {
+    "category": "disc",
+    "subtitle": "item.fake_triplets_disc.desc",
+    "sounds": [
+      {
+        "name": "ferrumium:disc/fake_triplets",
+        "stream": true
+      }
+    ]
+  }
+ }

@@ -1,0 +1,11 @@
+{
+    "replace": false,
+    "values": [
+        "#forge:ingots/enderium",
+        "#forge:ingots/black_gold",
+        "#forge:ingots/anarchinite",
+        "#forge:ingots/anarchinitite",
+        "#forge:ingots/archinite",
+        "#forge:ingots/hellarium"
+    ]
+}

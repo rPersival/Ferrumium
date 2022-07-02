@@ -1,0 +1,14 @@
+  
+{
+    "variants": 
+    {
+        "burning=false,facing=north": { "model": "ferrumium:smithing_table" },
+        "burning=false,facing=east": { "model": "ferrumium:smithing_table", "y": 90 },
+        "burning=false,facing=south": { "model": "ferrumium:smithing_table", "y": 180 },
+        "burning=false,facing=west": { "model": "ferrumium:smithing_table", "y": 270 },
+        "burning=true,facing=north": { "model": "ferrumium:smithing_table" },
+        "burning=true,facing=east": { "model": "ferrumium:smithing_table", "y": 90 },
+        "burning=true,facing=south": { "model": "ferrumium:smithing_table", "y": 180 },
+        "burning=true,facing=west": { "model": "ferrumium:smithing_table", "y":270  }
+    }
+}

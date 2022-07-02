@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    " HH",
+    " RH",
+    " R "
+  ],
+
+  "key": {
+    "H": {
+      "item": "ferrumium:hellarium_ingot"
+    },
+    "R": {
+      "item": "ferrumium:reinforced_stick"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:hellarium_axe",
+    "count": 1
+  }
+}

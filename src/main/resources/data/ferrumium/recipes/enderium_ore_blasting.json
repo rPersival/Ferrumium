@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "ferrumium:enderium_ore"
+  },
+  "result": "ferrumium:enderium_ingot",
+  "experience": 3.0,
+  "cookingtime": 100
+}

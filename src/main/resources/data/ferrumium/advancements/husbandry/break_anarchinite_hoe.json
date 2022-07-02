@@ -1,0 +1,33 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.husbandry.break_anarchinite_hoe.title",
+      "italic": true
+    },
+    "description": {
+      "translate": "advancements.husbandry.break_anarchinite_hoe.description"
+    },
+    "icon": {
+      "item": "ferrumium:anarchinite_hoe"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:husbandry/obtain_netherite_hoe",
+  "rewards": {
+    "experience": 200
+  },
+  "criteria": {
+    "broke_hoe": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "item": "ferrumium:anarchinite_hoe"
+        },
+        "durability": -1
+      }
+    }
+  }
+}

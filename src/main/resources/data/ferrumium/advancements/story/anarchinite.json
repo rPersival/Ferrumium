@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.story.anarchinite.title"
+    },
+    "description": {
+      "translate": "advancements.story.anarchinite.description"
+    },
+    "icon": {
+      "item": "ferrumium:anarchinite_ingot"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "Enderium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:anarchinite_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:story/enter_the_end"
+}

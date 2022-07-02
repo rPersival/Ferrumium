@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.end.enderium.title"
+    },
+    "description": {
+      "translate": "advancements.end.enderium.description"
+    },
+    "icon": {
+      "item": "ferrumium:enderium_ingot"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "Enderium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:enderium_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:end/root"
+}

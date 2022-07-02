@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    "EEE",
+    "EEE",
+    "EEE"
+  ],
+
+  "key": {
+    "E": {
+      "item": "ferrumium:enderium_ingot"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:enderium_block",
+    "count": 1
+  }
+}

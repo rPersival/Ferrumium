@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+      "item": "ferrumium:anarchinite_block"
+    }
+
+  ],
+
+  "result": {
+    "item": "ferrumium:anarchinite_ingot",
+    "count": 9
+  }
+}

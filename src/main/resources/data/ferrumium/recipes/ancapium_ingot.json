@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients": [
+
+    {
+      "item": "ferrumium:ancapium_block"
+    }
+
+  ],
+
+  "result": {
+    "item": "ferrumium:ancapium_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ferrumium:unstable_enderium_plating"
+  },
+  "result": "ferrumium:unstable_enderium_ingot",
+  "experience": 0.0,
+  "cookingtime": 200
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "ferrumium:powered_enderium_ore"
+  },
+  "result": "ferrumium:unstable_enderium_ingot",
+  "experience": 5.0,
+  "cookingtime": 150
+}

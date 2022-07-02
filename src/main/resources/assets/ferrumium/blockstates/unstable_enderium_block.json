@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "": [
+      { "model": "ferrumium:block/unstable_enderium_block_1" },
+      { "model": "ferrumium:block/unstable_enderium_block_2" },
+      { "model": "ferrumium:block/unstable_enderium_block_3" },
+      { "model": "ferrumium:block/unstable_enderium_block_4" },
+      { "model": "ferrumium:block/unstable_enderium_block_5" },
+      { "model": "ferrumium:block/unstable_enderium_block_6" },
+      { "model": "ferrumium:block/unstable_enderium_block_7" },
+      { "model": "ferrumium:block/unstable_enderium_block_8" },
+      { "model": "ferrumium:block/unstable_enderium_block_9" },
+      { "model": "ferrumium:block/unstable_enderium_block_10" }
+    ]
+  }
+}

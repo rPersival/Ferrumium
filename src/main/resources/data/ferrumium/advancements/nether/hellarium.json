@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.nether.hellarium.title"
+    },
+    "description": {
+      "translate": "advancements.nether.hellarium.description"
+    },
+    "icon": {
+      "item": "ferrumium:hellarium_ingot"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "Hell": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:hellarium_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:nether/root"
+}

@@ -1,0 +1,30 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.story.unst_enderium.title"
+    },
+    "description": {
+      "translate": "advancements.story.unst_enderium.description"
+    },
+    "icon": {
+      "item": "ferrumium:unstable_enderium_ingot"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "UnEnderium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ferrumium:unstable_enderium_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "ferrumium:story/anarchinite"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern": [
+    " A ",
+    " A ",
+    " R "
+  ],
+
+  "key": {
+    "A": {
+      "item": "ferrumium:ancapium_ingot"
+    },
+    "R": {
+      "item": "ferrumium:reinforced_stick"
+    }
+  },
+
+  "result": {
+    "item": "ferrumium:ancapium_sword",
+    "count": 1
+  }
+}
