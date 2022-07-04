@@ -40,8 +40,7 @@ public class UnstableEnderium extends Block implements IForgeBlock {
         Random random = worldIn.rand;
         double d0 = 0.0625D;
 
-        for (int i = 0; i < 6; i++)
-        {
+        for (int i = 0; i < 6; i++) {
             double d1 = (float) pos.getX() + random.nextFloat();
             double d2 = (float) pos.getY() + random.nextFloat();
             double d3 = (float) pos.getZ() + random.nextFloat();

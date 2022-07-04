@@ -12,8 +12,6 @@ import com.persival.ferrummod.items.FerrumiumMusicDiscItem;
 import com.persival.ferrummod.items.FoodApple;
 import com.persival.ferrummod.items.FoodEnchantedApple;
 import com.persival.ferrummod.items.itemsBase.ItemBase;
-//import jdk.nashorn.internal.ir.Block;
-//import net.minecraft.block.Block;
 import com.persival.ferrummod.items.itemsBase.ItemNotBurnableBase;
 import com.persival.ferrummod.items.toolsBase.ToolBase;
 import com.persival.ferrummod.items.toolsBase.ToolType;
@@ -31,7 +29,7 @@ public class RegistryHandler {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Main.MOD_ID);
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Main.MOD_ID);
 
-    public static void init() {
+    public static void initialize() {
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
         BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
@@ -45,8 +43,8 @@ public class RegistryHandler {
             ItemNotBurnableBase::new);
     public static final RegistryObject<Item> ANCAPIUM_PLATING = ITEMS.register("ancapium_plating",
             ItemNotBurnableBase::new);
-    public static final RegistryObject<Item> UNSTABLE_ENDERIUM_PLATING = ITEMS.register("unstable_enderium_plating",
-            ItemBase::new);
+    public static final RegistryObject<Item> UNSTABLE_ENDERIUM_PLATING = ITEMS.register(
+            "unstable_enderium_plating", ItemBase::new);
     public static final RegistryObject<Item> ENDERIUM_INGOT = ITEMS.register("enderium_ingot",
             ItemBase::new);
     public static final RegistryObject<Item> ANARCHINITE_PLATING = ITEMS.register("anarchinite_plating",
@@ -57,6 +55,8 @@ public class RegistryHandler {
             ItemBase::new);
     public static final RegistryObject<Item> BLACK_GOLD_NUGGET = ITEMS.register("black_gold_nugget",
             ItemBase::new);
+    public static final RegistryObject<Item> HELLARIUM_SCRAP = ITEMS.register("hellarium_scrap",
+            ItemNotBurnableBase::new);
 
     // Blocks
     public static final RegistryObject<Block> ANARCHINITE_BLOCK = BLOCKS.register("anarchinite_block",

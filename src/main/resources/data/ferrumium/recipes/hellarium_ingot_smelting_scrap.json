@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "ferrumium:hellarium_scrap"
+  },
+  "result": "ferrumium:hellarium_ingot",
+  "experience": 3.0,
+  "cookingtime": 200
+}
