@@ -6,7 +6,7 @@ import net.minecraft.item.*;
 public class ToolBase {
 
     public static ToolItem createTool(ToolType type, IItemTier itemTier, float attackDamageIn, float attackSpeedIn, boolean isBurnable, ItemGroup itemGroup) {
-        Item.Properties properties = isBurnable ? new Item.Properties().group(itemGroup).isBurnable() : new Item.Properties().group(itemGroup);
+        Item.Properties properties = isBurnable ? new Item.Properties().group(itemGroup).isImmuneToFire() : new Item.Properties().group(itemGroup);
         switch (type) {
             case SHOVEL:
                 return new ShovelItem(itemTier, attackDamageIn, attackSpeedIn, properties);
@@ -29,7 +29,7 @@ public class ToolBase {
     }
 
     public static SwordItem createSword(IItemTier itemTier, int attackDamageIn, float attackSpeedIn, boolean isBurnable, ItemGroup itemGroup) {
-        Item.Properties properties = isBurnable ? new Item.Properties().group(itemGroup).isBurnable() : new Item.Properties().group(itemGroup);
+        Item.Properties properties = isBurnable ? new Item.Properties().group(itemGroup).isImmuneToFire() : new Item.Properties().group(itemGroup);
         return new SwordItem(itemTier, attackDamageIn, attackSpeedIn, properties);
     }
 
@@ -42,7 +42,7 @@ public class ToolBase {
     }
 
     public static ArmorItem createArmor(IArmorMaterial itemTier, EquipmentSlotType equipmentSlotType, boolean isBurnable, ItemGroup itemGroup) {
-        Item.Properties properties = isBurnable ? new Item.Properties().group(itemGroup).isBurnable() : new Item.Properties().group(itemGroup);
+        Item.Properties properties = isBurnable ? new Item.Properties().group(itemGroup).isImmuneToFire() : new Item.Properties().group(itemGroup);
         return new ArmorItem(itemTier, equipmentSlotType, properties);
     }
 

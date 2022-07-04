@@ -1,44 +1,41 @@
 package com.persival.ferrummod.world.gen;
 
+import com.persival.ferrummod.Main;
 import com.persival.ferrummod.util.RegistryHandler;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.pattern.BlockMatcher;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.WorldGenRegistries;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
-import net.minecraft.world.gen.placement.ConfiguredPlacement;
-import net.minecraft.world.gen.placement.CountRangeConfig;
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraft.world.gen.feature.template.BlockMatchRuleTest;
+import net.minecraft.world.gen.feature.template.RuleTest;
+import net.minecraft.world.gen.feature.template.TagMatchRuleTest;
 
 public class OreGen {
-    public static void generateOre() {
-        for (Biome biome : ForgeRegistries.BIOMES) {
-                ConfiguredPlacement<CountRangeConfig> customConfigHellarium = Placement.COUNT_RANGE.configure(new CountRangeConfig(4, 5, 1, 65));
-                ConfiguredPlacement<CountRangeConfig> customConfigBGold = Placement.COUNT_RANGE.configure(new CountRangeConfig(15, 5, 128, 255));
-                ConfiguredPlacement<CountRangeConfig> customConfigEnderium = Placement.COUNT_RANGE.configure(new CountRangeConfig(50, 5, 1, 256));
-                ConfiguredPlacement<CountRangeConfig> customConfigUnEnderium = Placement.COUNT_RANGE.configure(new CountRangeConfig(5, 5, 1, 256));
 
-                // Hellarium
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-                        .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHERRACK, RegistryHandler.HELLARIUM_ORE.get().getDefaultState(), 4))
-                        .withPlacement(customConfigHellarium));
+    private static final RuleTest OVERWORLD = OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD;
+    private static final RuleTest THE_NETHER = OreFeatureConfig.FillerBlockType.BASE_STONE_NETHER;
+    private static final RuleTest THE_END = new BlockMatchRuleTest(Blocks.END_STONE);
 
-                // Black Gold
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-                        .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHERRACK, RegistryHandler.BLACK_GOLD_ORE.get().getDefaultState(), 8))
-                        .withPlacement(customConfigBGold));
+    public static final ConfiguredFeature<?, ?> HELLARIUM_ORE = buildOreFeature(THE_NETHER, RegistryHandler.HELLARIUM_ORE.get(), 3, 255, 8);
+    public static final ConfiguredFeature<?, ?> BLACK_GOLD_ORE = buildOreFeature(THE_NETHER, RegistryHandler.BLACK_GOLD_ORE.get(), 6, 255, 23);
+    public static final ConfiguredFeature<?, ?> ENDERIUM_ORE = buildOreFeature(THE_END, RegistryHandler.ENDERIUM_ORE.get(), 4, 255, 8);
+    public static final ConfiguredFeature<?, ?> POWERED_ENDERIUM_ORE = buildOreFeature(THE_END, RegistryHandler.POWERED_ENDERIUM_ORE.get(), 3, 255, 3);
 
-                // Enderium
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-                        .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("end_stone", null, new BlockMatcher(Blocks.END_STONE)), RegistryHandler.ENDERIUM_ORE.get().getDefaultState(), 3))
-                        .withPlacement(customConfigEnderium));
+    public static ConfiguredFeature<?, ?> buildOreFeature(RuleTest rule, Block block, int maxVeinSize, int maxHeight, int countInChunk) {
+        return Feature.ORE.withConfiguration(new OreFeatureConfig(rule, block.getDefaultState(), maxVeinSize)).range(maxHeight).square().count(countInChunk);
+    }
 
-                // Powered Enderium
-                biome.addFeature(GenerationStage.Decoration.UNDERGROUND_ORES, Feature.ORE
-                        .withConfiguration(new OreFeatureConfig(OreFeatureConfig.FillerBlockType.create("end_stone", null, new BlockMatcher(Blocks.END_STONE)), RegistryHandler.POWERED_ENDERIUM_ORE.get().getDefaultState(), 3))
-                        .withPlacement(customConfigUnEnderium));
-        }
+    public static void generateOres() {
+        Registry<ConfiguredFeature<?, ?>> registry = WorldGenRegistries.CONFIGURED_FEATURE;
+
+        Registry.register(registry, new ResourceLocation(Main.MOD_ID, "hellarium_ore"), HELLARIUM_ORE);
+        Registry.register(registry, new ResourceLocation(Main.MOD_ID, "enderium_ore"), ENDERIUM_ORE);
+        Registry.register(registry, new ResourceLocation(Main.MOD_ID, "powered_enderium_ore"), POWERED_ENDERIUM_ORE);
+        Registry.register(registry, new ResourceLocation(Main.MOD_ID, "powered_enderium_ore"), BLACK_GOLD_ORE);
     }
 }

@@ -11,8 +11,7 @@ public class ItemBaseBlock extends BlockItem {
         super(block, new Item.Properties().group(itemGroup));
     }
 
-    public ItemBaseBlock(Block block)
-    {
+    public ItemBaseBlock(Block block) {
         this(block, ItemGroup.BUILDING_BLOCKS);
     }
 }

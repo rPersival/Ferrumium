@@ -20,18 +20,19 @@ public class Main {
     public static final String MOD_ID = "ferrumium";
 
     public Main() {
-        RegistryHandler.init();
-        MinecraftForge.EVENT_BUS.register(this);
-
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        RegistryHandler.initialize();
+        bus.addListener(this::setup);
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
+    public void setup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(OreGen::generateOres);
+    }
 
     @SubscribeEvent
     public static void onInitBiomesGen(FMLCommonSetupEvent event) { }
 
     @SubscribeEvent
-    public static void loadCompleteEvent(FMLLoadCompleteEvent event) {
-         OreGen.generateOre();
-    }
+    public static void loadCompleteEvent(FMLLoadCompleteEvent event) { }
 }

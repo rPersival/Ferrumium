@@ -6,54 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:gold_nugget",
-          "weight": 100,
-          "conditions": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "item": "ferrumium:ancapium_pickaxe"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_nugget",
-          "weight": 100,
-          "conditions": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "item": "ferrumium:ancapium_pickaxe"
-              }
-            }
-          ]
-        },
-        {
-        "type": "minecraft:empty",
-        "weight": 800
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "ferrumium:hellarium_ore",
-          "conditions": [
-            {
-              "condition": "minecraft:match_tool",
-              "predicate": {
-                "item": "ferrumium:ancapium_pickaxe"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "ferrumium:hellarium_ore"
+          "name": "ferrumium:hellarium_scrap"
         }
       ]
     }
